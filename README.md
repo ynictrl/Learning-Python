@@ -1,2 +1,2 @@
-# CursoPython
-Aulas do curso de python da udemy
+## Learning Python 🐍
+Notas do meu aprendizado da linguagem python
