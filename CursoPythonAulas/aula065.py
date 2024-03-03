@@ -7,10 +7,10 @@ e retornar um valor específico.
 Por padrão, funções em Python retornam None (nada)
 """
 
-def imprimir(a, b, c):
+def imprimir(a, b, c): #parametros
     print(a, b, c)
 
-imprimir(1, 2, 3)
+imprimir(1, 2, 3) # argumentos
 imprimir(4, 5, 6)
 
 def saudacao(nome='Sem nome'):
