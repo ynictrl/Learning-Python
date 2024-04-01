@@ -1,17 +1,21 @@
-num = 16
-res = 0
-i = 1
-impares = [] 
+num = 16 # valor fornecido pelo usuário
 
-while res < num: 
-    impares.append(i)
-    res = sum(impares)
-    
-    print(res, impares)
+def quadrado_perfeito(n):
+    res = 0
+    i = 1
+    impares = [] 
 
-    i += 2
+    while res < n: 
+        impares.append(i)
+        res = sum(impares)
+        
+        # print(res, impares)
 
-if res == num:
-    print(f'{num} é um quadrado perfeito!')
-else:
-    print(f'{num} não é um quadrado perfeito!')
+        i += 2
+
+    if res == n:
+        return f'{n} é um quadrado perfeito!'
+    else:
+        return f'{n} não é um quadrado perfeito!'
+
+print(quadrado_perfeito(num))

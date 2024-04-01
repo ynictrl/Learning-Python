@@ -1,3 +1,5 @@
+# valores fornecidos pelo usuário
+n1, n2, n3 = 12, 12, 14
 
 def maior_valor(a, b, c):
     if a > b and a > c:
@@ -9,4 +11,4 @@ def maior_valor(a, b, c):
     
     return '2 ou mais valores são iguais!'
     
-print(maior_valor(12, 12, 12))
+print(maior_valor(n1, n2, n3))

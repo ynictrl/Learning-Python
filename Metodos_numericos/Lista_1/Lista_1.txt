@@ -1,0 +1,198 @@
+# 1)
+
+# valores fornecidos pelo usuário
+n1, n2, n3 = 12, 12, 14
+
+def maior_valor(a, b, c):
+    if a > b and a > c:
+        return f'A {a} é o maior valor!'
+    if b > a and b > c:
+        return f'B {b} é o maior valor!'
+    if c > a and c > b:
+        return f'C {c} é o maior valor!'
+    
+    return '2 ou mais valores são iguais!'
+    
+print(maior_valor(n1, n2, n3))
+
+# ---------------------------------------------------------- 
+
+# 2)
+
+# [ 1, 2, 3, 5, 7, 11, 13, 17...]
+
+num = 10 # valor fornecido pelo usuário
+
+def sequencia_primos(n):
+    numeros = []
+
+    i=1
+    j=1
+    while len(numeros) != n:
+        count = 0
+        for j in range(2, i):
+                
+            res = i%j
+            if (res == 0 and i != j):
+                count += 1
+            j += 1
+
+        if count == 0:
+            numeros.append(i)
+            
+        i += 1
+
+    return numeros
+
+print(sequencia_primos(num))
+
+# ----------------------------------------------------------
+
+# 3)
+
+num = 16 # valor fornecido pelo usuário
+
+def quadrado_perfeito(n):
+    res = 0
+    i = 1
+    impares = [] 
+
+    while res < n: 
+        impares.append(i)
+        res = sum(impares)
+        
+        # print(res, impares)
+
+        i += 2
+
+    if res == n:
+        return f'{n} é um quadrado perfeito!'
+    else:
+        return f'{n} não é um quadrado perfeito!'
+
+print(quadrado_perfeito(num))
+
+# ---------------------------------------------------------- 
+
+# 4)
+
+# sequencia dada pelo usuário
+num = [-3, 0, 5, 12, -3, 5, 0, -1] # 2 zeros, 3 pos, 3 neg
+
+def contagem_valores(numeros):
+    count = [0, 0, 0] # [0] == neg, [1] == zero, [2] == pos
+
+    for i in numeros:
+        if i < 0: 
+            count[0] += 1
+        if i == 0: 
+            count[1] += 1
+        if i > 0: 
+            count[2] += 1
+
+    return(f'Os números listados possuem:\n'
+        f'{count[0]} números negativos\n'
+        f'{count[1]} números zeros\n'
+        f'{count[2]} números positivos\n')
+    
+print(contagem_valores(num))
+
+# ---------------------------------------------------------- 
+
+# 5)
+
+# sequencia dada pelo usuário
+num = [-3, 0, 5, 12, -3, 5, 0, -1] # 2 zeros, 3 pos, 3 neg
+
+def contagem_valores(numeros):
+    count = [0, 0, 0] # [0] == neg, [1] == zero, [2] == pos
+
+    for i in numeros:
+        if i < 0: 
+            count[0] += 1
+        if i == 0: 
+            count[1] += 1
+        if i > 0: 
+            count[2] += 1
+
+    return(f'Os números listados possuem:\n'
+        f'{count[0]*100/len(numeros)}% números negativos\n'
+        f'{count[1]*100/len(numeros)}% números zeros\n'
+        f'{count[2]*100/len(numeros)}% números positivos\n')
+    
+print(contagem_valores(num))
+
+# ---------------------------------------------------------- 
+
+# 6)
+
+# sequencia dada pelo usuário
+num = [4, 2, 15, 15, 15, 3, 7, 7, 7, 7, 2]
+
+def numero_triplas(numeros):
+    count = 0 # contagem
+    pred = 0 # antecessor
+    tripla = 0
+
+    for i in numeros:
+        if i != pred:
+            count = 0
+
+        pred = i
+        count += 1
+
+        if count >= 3:
+            tripla += 1
+
+    return (f'A seqüência dada contém {tripla} tripla(s).')
+
+print(numero_triplas(num))
+
+# ---------------------------------------------------------- 
+
+# 7)
+
+num = 5 # número fornecido pelo usuário
+
+def ast_for(n):
+    asteriscos_for = ''
+    for i in range(n):
+        asteriscos_for += '*'
+
+    return asteriscos_for
+
+def ast_while(n):
+    asteriscos_while = ''
+    j = 0
+    while j < n:
+        asteriscos_while += '*'
+        j += 1
+    
+    return asteriscos_while
+
+print(f'for:{ast_for(num)} | while:{ast_while(num)}')
+
+# ---------------------------------------------------------- 
+
+# 8)
+
+import numpy as np
+
+# matriz fornecida pelo usuário
+matriz = np.array([[0,   1,  2,  3],
+                   [4,   5,  6,  7],
+                   [8,   9, 10, 11],
+                   [12, 13, 18, 15]])
+
+def maior_valor(n):
+    N,M = n.shape
+    pred = 0
+
+    for i in range(N):
+        for j in range(M):
+            if n[i, j] > pred:
+                pred = n[i, j]
+
+    return (pred)
+
+print(maior_valor(matriz))
