@@ -1,0 +1,96 @@
+1. Converta para a base 10 os seguintes n ́umeros bin ́arios:
+(a) 11.111101012
+(b) 10110101.10101012
+Fa ̧ca um programa que implemente a convers ̃ao automaticamente (as cadeias
+de entrada s ̃ao fornecidas pelo usu ́ario).
+
+
+2. Escreva um programa que converta um n ́umero inteiro na base 10 com
+sinal, para a base 2.
+
+
+3. Use o computador para acumular as seguintes somas:
+(a) soma1 = 8.000 −
+P10000
+k=1 0.008
+
+(b) soma2 = 10.000 −
+P8000
+k=1 0.0125
+
+
+4. Pesquise, utilizando o computador que vocˆe tem dispon ́ıvel, como  ́e feito
+o armazenamento dos n ́umeros reais. Quantos digitos s ̃ao utilizados para
+a mantissa do n ́umero real? E para potˆencia?
+
+
+5. Fa ̧ca um programa que converta inteiros sem sinal, na base 2 para a base
+8 e vice-versa.sSem passar pela ase 10.
+
+
+6. Fa ̧ca um programa que converta inteiros sem sinal, na base 2 para a base
+16 (hexadecimal). Sem passar pela base 10.
+
+
+7. Calcule o valor do erro absoluto, erro relativo e erro percentual dos valores
+abaixo (Ve: valor exato e Vc: valor calculado) Indique qual tem menor
+erro percentual.
+(a) Ve=1.000 e Vc=0.999
+(b) Ve=0.34678 e Vc=0.3468
+
+(c) Ve=0.000005 e Vc=0.00000495
+(d) Ve=15000.85 e vc=14999,0
+
+
+8. Para f(x) = cosx, ache o polinˆomio de Maclaurin que aproxime f(x) com
+erro ε < 10−7
+
+, no intervalo [0, π].
+
+9. Mostre que
+f(x) = 1 + 3(x − 1) + 3(x − 1)2 + (x − 1)3
+f(x) = 1 + 3(x + 1) − 3(x + 1)2 + (x + 1)3
+S ̃ao duas representa ̧c ̃oes do mesmo polinˆomio p(x) = x
+3
+, ou prove que s ̃ao
+
+diferentes!
+
+
+10. Seja a fun ̧c ̃ao x ∗ cos[(x)/(x − 2)], e o intervalo [1, 1.5], em radianos. Fa ̧ca
+um programa para computar a ra ́ız da equa ̧c ̃ao com tolerˆancia ε = 10−12
+usando os m ́etodos da bissec ̧c ̃ao e da falsa-posi ̧c ̃ao. Realize, no m ́aximo
+500 itera ̧c ̃oes.
+
+
+11. Use os m ́etodos da bissec ̧c ̃ao e da falsa-posi ̧c ̃ao para achar a raiz da equa ̧c ̃ao
+f(x) = cos(x) + 1 − x, [0.8, 1.6], x em radianos. Calcule 4 itera ̧c ̃oes `a m ̃ao
+para cada m ́etodo e fa ̧ca um programa (em Fortran, Pascal ou linguagem
+C) para calcular 100 itera ̧c ̃oes, ou pare se achar a ra ́ız com precis ̃ao de
+12 casas decimais. Qual dos m ́etodos apresenta o melhor resultado? Por
+que?
+
+
+12. Ache as itera ̧c ̃oes de Newton-Raphson para achar a ra ́ız c ́ubica e a ra ́ız
+quarta de um n ́umero N.
+13. Use o m ́etodo de Newton-Raphson para achar a raiz da equa ̧c ̃ao f(x) =
+cos(x) + 1 − x, [0.8, 1.6], x em radianos. Manualmente, fa ̧ca 10 itera ̧c ̃oes
+ou pare se a diferen ̧ca entre duas itera ̧c ̃oes for menor 10−9
+
+. Fa ̧ca um
+programa para achar um X0 para iniciar o m ́etodo. (Sugest ̃ao: fa ̧ca um
+programa que divide o intervalo de interesse em 100 partes (p0..p100) e
+escolha para X0 o pi que tem menor f(pi) em m ́odulo).
+
+
+14. Quando utilizamos o m ́etodo de Newton-Raphson para achar a raiz
+de f(x) e, durante o processo iterativo, na k- ́esima itera ̧c ̃ao, achamos
+f‘(pk) = 0. O que devemos fazer? Justifique sua resposta. (1pt)
+
+
+15. Inicie com p0 = 10 e ache a √
+
+91 usando o m ́etodo de Newton-Raphson.
+
+(fa ̧ca, no m ́aximo, 4 itera ̧c ̃oes; ou pare, se o erro <= 10−7
+)(2pts)
