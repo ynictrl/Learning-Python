@@ -10,14 +10,9 @@ sinal, para a base 2.
 
 
 3. Use o computador para acumular as seguintes somas:
-(a) soma1 = 8.000 −
-P10000
-k=1 0.008
+(a) soma1 = 8.000 − (i final = 10000, i inicial = 1, termo do somatorio = 0.008)
 
-(b) soma2 = 10.000 −
-P8000
-k=1 0.0125
-
+(b) soma2 = 10.000 − (i final = 8000, i inicial = 1, termo do somatorio = 0.0125)
 
 4. Pesquise, utilizando o computador que vocˆe tem dispon ́ıvel, como  ́e feito
 o armazenamento dos n ́umeros reais. Quantos digitos s ̃ao utilizados para
