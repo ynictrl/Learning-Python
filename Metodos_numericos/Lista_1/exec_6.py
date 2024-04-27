@@ -2,7 +2,7 @@ A, B, C, D, E, F = 10, 11, 12, 13, 14, 15
 
 # BASE 2 PARA BASE 16
 
-bin_input = '11010011'
+bin_input = '1011010011'
 bin = ''
 res_b16 = ''
 
