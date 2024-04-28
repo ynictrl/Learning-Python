@@ -39,11 +39,64 @@ for i in bin:
             
         if piece_res > 9:
             word = 'ABCDEF'
-            for i in range(6):
-                if piece_res == (i + 10):
-                    piece_res = word[i]
+            for k in range(6):
+                if piece_res == (k + 10):
+                    piece_res = word[k]
         
         res_b16 += str(piece_res) # acrescimo no resultado
         piece_bin = '' # resetar parte
 
 print(res_b16)
+
+print(f'\n-----------------------------\n')
+
+# BASE 16 PARA BASE 2
+
+b16 = 'D3'
+res_bin = []
+res_bin_value = ''
+num =0
+
+i = len(b16) - 1
+while i > -1:
+
+    #if int(b16[i]) > 9:
+    word = 'ABCDEF'
+    if b16[i] in word:
+        for j in range(6):
+            if b16[i] == word[j]:
+                div = 10 + j
+                num = div
+    else:
+        div = int(b16[i])
+        num = div
+
+    print(b16[i])
+    
+    while div >= 1:
+        res_bin += str(div % 2)
+
+        div_succ = div // 2
+        div = div_succ
+
+    if num > 3 and num < 8: # 0 1 10 11 (100 101 110 111)
+        res_bin += '0'
+    if num > 1 and num < 4: # 0 1 (10 11) 100...111
+        res_bin += '0'
+        res_bin += '0'
+    if num < 2: # (0 1) 10 11 100...111
+        res_bin += '0' 
+        res_bin += '0'
+        res_bin += '0'
+
+    print(res_bin, '..')
+    i -= 1
+
+print(res_bin)
+res_bin.reverse()
+print(res_bin)
+
+for j in res_bin:
+    res_bin_value += j
+
+print(res_bin_value)
