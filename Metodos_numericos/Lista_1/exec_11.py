@@ -1,24 +1,24 @@
-# f(x) = x ∗ cos[(x)/(x − 2)]
-# intervalo [1, 1.5]
+# f(x) = cos(x) + 1 − x,
+# intervalo [0.8, 1.6]
 # ε = 10**-12
-# 500 iteraçoes
+# 100 iteraçoes
 
 import numpy as np
 
 #função 
 def f(x):
-    return x * np.cos((x)/(x - 2))
+    return np.cos(x) + - x
 
 #intervalo
-ak = 1
-bk = 1.5
+ak = 0.8
+bk = 1.6
 
 #lista de f(ck)
 yck_list = []
 
 # MÉTODO BISSECÇÃO
 
-for i in range(500):
+for i in range(100):
     ck = (bk + ak)/2
     yck = f(ck)
 
@@ -35,22 +35,18 @@ for i in range(500):
 
 #-----------------------------------------------------
 
-#função 
-def f(x):
-    return x*np.sin(x) -1#x * np.cos((x)/(x - 2))
-
 #intervalo
-ak = 1
-bk = 1.5
+ak = 0.8
+bk = 1.6
 
 #lista de f(ck)
 yck_list = []
 
 # MÉTODO DA FALSA POSIÇÃO
 
-for i in range(500):
+for i in range(100):
     ck = bk - (f(bk)*(bk-ak))/(f(bk)-f(ak))
-    yck = float(f(ck))
+    yck = f(ck)
 
     if yck < 0:
         ak = ck
