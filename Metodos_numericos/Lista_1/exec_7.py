@@ -14,7 +14,7 @@ def calc_menor_erro(v_v, v_c): # valor ver e calc
     erro_rel = erro_ver/v_v
     if erro_rel < 0: erro_rel *= -1 # modulo
     
-    erro_per = erro_ver * erro_rel * 100
+    erro_per = erro_rel * 100
 
     return erro_per
 
@@ -34,7 +34,7 @@ def compara_erro_per(*args):
         else:
             menor = j
     
-    frase = f'valor exato: {args[j][0]} | valor exato: {args[j][1]} | erro percentual: {menor}'
+    frase = f'valor exato: {args[j][0]} | valor exato: {args[j][1]} | erro percentual: {menor} \n {erros_per}'
 
     return frase
 
