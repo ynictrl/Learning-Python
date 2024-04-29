@@ -1,0 +1,2 @@
+Para nuémero real (float): a mantissa possui 23 bits e a potência 8 bits.
+Para número potêncial (double): a mantissa possui 52 bits e a potência 11 bits.

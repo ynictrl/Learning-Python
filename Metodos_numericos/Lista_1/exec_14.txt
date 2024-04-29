@@ -1,0 +1,2 @@
+Quando f‘(pk) = 0, significa que a tangente à curva da função em pk é horizontal, ou seja, não há uma inclinação para a tangente.
+O mais recomendado a se fazer é reiniciar o método usando um novo ponto inicial.
