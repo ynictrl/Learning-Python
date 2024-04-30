@@ -1,4 +1,5 @@
 # Newton-Raphson
+
 import numpy as np
 
 i_i = 0.8

@@ -1,8 +1,6 @@
-A, B, C, D, E, F = 10, 11, 12, 13, 14, 15
-
 # BASE 2 PARA BASE 16
 
-bin_input = '1011010011'
+bin_input = input('Digite um número na base 2: ')
 bin = ''
 res_b16 = ''
 
@@ -19,7 +17,7 @@ elif len(bin_input)%4 == 1:
 else:
     bin += bin_input
 
-print(bin) # numero adaptado
+# print(bin) # numero adaptado
 
 piece_bin = ''
 piece_res = 0
@@ -27,7 +25,7 @@ for i in bin:
     piece_bin += i 
 
     if len(piece_bin) == 4:
-        print(piece_bin) # parte separada
+        # print(piece_bin) # parte separada
         j = len(piece_bin) - 1  # iteravel de trás pra frente
         int_exp = -1 # expoente
         piece_res = 0 # resultado piece
@@ -46,13 +44,13 @@ for i in bin:
         res_b16 += str(piece_res) # acrescimo no resultado
         piece_bin = '' # resetar parte
 
-print(res_b16)
+print(f'({bin_input})b2 = ({res_b16})b16')
 
 print(f'\n-----------------------------\n')
 
 # BASE 16 PARA BASE 2
 
-b16 = 'D3'
+b16 = input('Digite um número na base 16: ') #D3
 res_bin = []
 res_bin_value = ''
 num =0
@@ -71,7 +69,7 @@ while i > -1:
         div = int(b16[i])
         num = div
 
-    print(b16[i])
+    # print(b16[i])
     
     while div >= 1:
         res_bin += str(div % 2)
@@ -89,14 +87,14 @@ while i > -1:
         res_bin += '0'
         res_bin += '0'
 
-    print(res_bin, '..')
+    # print(res_bin, '..')
     i -= 1
 
-print(res_bin)
+# print(res_bin)
 res_bin.reverse()
-print(res_bin)
+# print(res_bin)
 
 for j in res_bin:
     res_bin_value += j
 
-print(res_bin_value)
+print(f'({b16})b16 = ({res_bin_value})b2')

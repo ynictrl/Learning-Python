@@ -28,5 +28,8 @@ def conversion(numBin):
     res = int_res + float_res # soma dos resultados
     return res
 
-print(conversion('11.11110101'))
-print(conversion('10110101.1010101'))
+conv1 = conversion('11.11110101')
+conv2 = conversion('10110101.1010101')
+
+print(f'(11.11110101)b10 = ({conv1})b2')
+print(f'(10110101.1010101)b10 = ({conv2})b2')

@@ -7,4 +7,11 @@ def pol(x):
 
     return y1, y2
 
-print(pol(1), 'Diferentes!')
+valores = pol(0)
+
+if valores[0] == valores[1]:
+    res = 'Iguais'
+else:
+    res = 'Diferentes'
+
+print(valores, res)

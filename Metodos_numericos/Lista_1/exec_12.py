@@ -1,6 +1,6 @@
 # Newton-Raphson
 
-N = 5
+N = float(input('Digite um número: '))
 
 # RAIZ CUBICA
 

@@ -1,4 +1,3 @@
-
 # i_i = 1 # incdice inicial
 # i_f = 4 # indice final
 # sum = 2 # termo somatorio

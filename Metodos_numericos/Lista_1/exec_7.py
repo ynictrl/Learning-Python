@@ -34,7 +34,7 @@ def compara_erro_per(*args):
         else:
             menor = j
     
-    frase = f'valor exato: {args[j][0]} | valor exato: {args[j][1]} | erro percentual: {menor} \n {erros_per}'
+    frase = f'valor exato: {args[j][0]} | valor exato: {args[j][1]} | menor erro percentual: {menor}\nErros: {erros_per}'
 
     return frase
 

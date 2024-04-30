@@ -1,5 +1,5 @@
-int = -10 # base 10
-div = int if int >= 0 else -int # modulo de int
+b10 = input('Digite um número inteiro: ') # base 10
+div = int(b10) if int(b10) >= 0 else -int(b10) # modulo de int
 bin = [] # lista de binario
 bin_value = '' # bin final
 
@@ -15,7 +15,7 @@ while div >= 1:
     div = div_succ
 
 # sinal
-if int >= 0:
+if int(b10) >= 0:
     bin.append('0')
 else:
     bin.append('1')
