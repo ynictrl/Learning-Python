@@ -1,0 +1,3 @@
+Métodos diretos são geralmente preferidos para sistemas pequenos a moderadamente grandes com matrizes não esparsas, 
+enquanto métodos iterativos são mais adequados para sistemas grandes e/ou esparsos, 
+onde eficiência computacional é uma preocupação e uma solução aproximada é aceitável.

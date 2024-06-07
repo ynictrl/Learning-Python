@@ -1,0 +1,3 @@
+A interpolação polinomial é preferível quando se necessita de precisão exata nos pontos de dados conhecidos, 
+enquanto a aproximação polinomial é mais adequada quando se busca uma representação suave e geral dos dados, 
+especialmente quando há ruído presente ou quando a precisão exata nos pontos de dados não é crítica.
