@@ -60,18 +60,3 @@ for j in range(4):
     y.append(A[j][0]*x1[0] +  A[j][1]*x1[1] +  A[j][2]*x1[2] +  A[j][3]*x1[3])
 
 print(f'resultado com 6 iterações: {y}')
-
-
-
-
-# y = np.array([])
-# # prova real
-# for j in range(4):
-    
-#     np.append(y, A[j][0]*x1[0] +  A[j][1]*x1[1] +  A[j][2]*x1[2] +  A[j][3]*x1[3])
-
-# if y.all() == B.all():
-#     res = 'Convergira'
-# else:
-#     res = 'Não convergira'
-# print(f'resultado com 6 iterações: {y}. {res}')
