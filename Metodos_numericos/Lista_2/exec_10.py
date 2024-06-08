@@ -5,7 +5,7 @@ import numpy as np
 #(-4,3),(-1,-1),(0,0),(2,1),(3,2)
 
 x = [-4., -1., 0., 2., 3.]
-y = [-4., -1., 0., 2., 3.]
+y = [ 3., -1., 0., 1., 2.]
 
 x2 = 0
 for i in x:
@@ -99,4 +99,6 @@ def gauss(m):
 
     return m
 
-gauss(M)
+res = gauss(M)[:,3]
+
+print(f'{res[0]}*x**2 + {res[1]}*x + {res[2]}')
