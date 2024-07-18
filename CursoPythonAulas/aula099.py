@@ -10,4 +10,11 @@
 
 import aula099_m
 
+from aula099_m import soma, variavel_modulo
+
 print('Este módulo se chama', __name__)
+# print('Este módulo se chama', __name__)
+print(aula099_m.variavel_modulo)
+print(variavel_modulo)
+print(soma(2, 3))
+print(aula099_m.soma(2, 3))
