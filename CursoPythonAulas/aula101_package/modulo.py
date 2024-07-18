@@ -4,6 +4,8 @@
 #     'nova_variavel',
 # ]
 
+from aula101_package.modulo_b import fala_oi
+
 variavel = 'Alguma coisa'
 
 
