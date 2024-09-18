@@ -56,6 +56,6 @@ def randomizer(amount_cards, amount_player):
 
     return player, p
 
-print(randomizer(check(5), 5))
+print(randomizer(check(4), 4))
     
 
