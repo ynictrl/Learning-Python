@@ -47,18 +47,17 @@ import random
 def ComPy():
     l1 = [1, 2, 3, 4, 5, 6, 7]
     l2 = []
+    lost = []
 
     for i in range(len(l1)):
         
         if i == 0:
             k = random.randrange(0, len(l1))
-            lost = str(k)
         else:
             
             while str(k) in lost:
                 k = random.randrange(0, len(l1))
-            lost += str(k)
-        
+        lost.append(str(k))
         l2.append(l1[k])
 
     print(f'Lista original:    {l1} \nLista embaralhada: {l2}')
@@ -72,9 +71,9 @@ def In(a, b):
     return res
 
 def SemPy():
-    l1 = [1, 2, 3, 4, 5, 6, 7]
+    l1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
     l2 = []
-    lost = ""
+    lost = []
 
     for i in range(len(l1)):
 
@@ -83,10 +82,10 @@ def SemPy():
         else:
             while(In(str(k), lost)):
                 k = random.randrange(0, len(l1))
-        lost += str(k)
+        lost.append(str(k))
         
         l2.append(l1[k])
     
-    return f'Lista original:    {l1} \nLista embaralhada: {l2}'
+    return f'Lista original:    {l1} \nLista embaralhada: {l2} \nLost: {lost}'
 
 print(SemPy())
